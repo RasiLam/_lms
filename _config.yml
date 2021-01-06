@@ -15,11 +15,11 @@
 # in the templates via {{ site.myvariable }}.
 lang: zh-CN
 title: RasiLam's Personal Website
-email:"1209307789@qq.com"
+email: "1209307789@qq.com"
 description: "RasiLam's Personal Website"
 baseurl:"lms_" # the optional subpath of your site, e.g. "/blog"
 url: "https://github.com/RasiLam" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-author:"Lin Mengshi"
+author:
   name:"Lin Mengshi"
   twitter:
   picture:
