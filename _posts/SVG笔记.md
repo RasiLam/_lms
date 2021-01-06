@@ -1,12 +1,12 @@
-```
+---
 # 篇一
 ## title: SVG之永不停息的文传院
 ### excerpt_separator: "<!--more-->"
 #### categories: 
-  - svg制作
-    tags:
-  - svg
-```
+     - svg制作
+       tags:
+     - svg
+---
 #### 转动的Saad Ali Shah的<a href="https://codepen.io/saadalishah/details/grzbVV">SVG 动画</a>，把原来的LOGO置换成文传院的LOGO。永不停歇的文传！
 
 <!--more-->
@@ -1002,15 +1002,16 @@
 
         
       </section>
-```
+      
+---
 # 篇二
-## title: SVG制作之动图混合篇
+## title: SVG制作之SVG动图的混合篇
 ### excerpt_separator: "<!--more-->"
 #### categories: 
-  - svg制作
-    tags:
-  - svg
-```
+     - svg制作
+       tags:
+     - svg
+---
 
 #### 本片文章用鼠标悬停在svg上演示cale+transition-delay、过度变色、缩小、移动，混合位移等制作
 <!--more-->
@@ -1136,700 +1137,199 @@
 后台可查看代码！
 
 ---
-title: SVG实验！小汽车出发啦！
-excerpt_separator: "<!--more-->"
-categories: 
-  - svg制作
-tags:
-  - svg
+# 篇三
+## title: SVG制作之自己制作svg动图的心得
+### excerpt_separator: "<!--more-->"
+#### categories: 
+     - svg制作
+       tags:
+     - svg
 ---
 
-## 篇三
-## title：小汽车在慢慢滚动的同时，天上的云层在慢慢变化
+#### 对于svg制作与svg+css的动画制作，我们可以从哪方面入手？我们应该如何为自己的svg寻找素材与制作动画并演示如何在不影响其他svg的情况下进行页面中svg的展示，请参考一下文章。
 <!--more-->
-设定云朵的关键帧动画，使云朵通过平移动画随机漂浮在画面上空，进行小汽车的循环设定，在云朵漂浮的同时，小汽车通过车轮旋转动画与车身平移动画循环播放。形成车一直在走，云彩却在不断变化的动画。
-<section class="page__content" itemprop="text">
-        
+### 找到网站：
+- 对于SVG动图，我一开始是不会做的，然后我上网找到了一个网站[svg-animation](https://codepen.io/search/pens?q=svg%20animation&page=1&order=popularity&depth=everything&show_forks=false)<br>
+- 里面有很多SVG动图可以供你参考。你可以随便选一个动图（最好代码不要有JS），然后参考里面的html和scss代码。
+## 也可以从Font Awesome中取SVG素材
+- [Font Awesome](https://fontawesome.com/)是一套完美的图标字体库，为您提供了可缩放的矢量图标，您可以使用CSS所提供的所有特性对它们进行更改，包括：大小、颜色、阴影或者其它任何支持的效果。
+<svg width="10%" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="flushed" class="svg-inline--fa fa-flushed fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M344 200c-13.3 0-24 10.7-24 24s10.7 24 24 24 24-10.7 24-24-10.7-24-24-24zm-192 0c-13.3 0-24 10.7-24 24s10.7 24 24 24 24-10.7 24-24-10.7-24-24-24zM248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zM80 224c0-39.8 32.2-72 72-72s72 32.2 72 72-32.2 72-72 72-72-32.2-72-72zm232 176H184c-21.2 0-21.2-32 0-32h128c21.2 0 21.2 32 0 32zm32-104c-39.8 0-72-32.2-72-72s32.2-72 72-72 72 32.2 72 72-32.2 72-72 72z"></path></svg>
+<svg width="10%" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="frown" class="svg-inline--fa fa-frown fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm80 168c17.7 0 32 14.3 32 32s-14.3 32-32 32-32-14.3-32-32 14.3-32 32-32zm-160 0c17.7 0 32 14.3 32 32s-14.3 32-32 32-32-14.3-32-32 14.3-32 32-32zm170.2 218.2C315.8 367.4 282.9 352 248 352s-67.8 15.4-90.2 42.2c-13.5 16.3-38.1-4.2-24.6-20.5C161.7 339.6 203.6 320 248 320s86.3 19.6 114.7 53.8c13.6 16.2-11 36.7-24.5 20.4z"></path></svg>
+<svg width="10%" aria-hidden="true" focusable="false" data-prefix="far" data-icon="grin-squint-tears" class="svg-inline--fa fa-grin-squint-tears fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M117.1 384.1c-25.8 3.7-84 13.7-100.9 30.6-21.9 21.9-21.5 57.9.9 80.3s58.3 22.8 80.3.9C114.3 479 124.3 420.8 128 395c.8-6.4-4.6-11.8-10.9-10.9zm-41.2-41.7C40.3 268 53 176.1 114.6 114.6 152.4 76.8 202.6 56 256 56c36.2 0 70.8 9.8 101.2 27.7 3.8-20.3 8-36.1 12-48.3C333.8 17.2 294.9 8 256 8 192.5 8 129.1 32.2 80.6 80.6c-74.1 74.1-91.3 183.4-52 274 12.2-4.1 27.7-8.3 47.3-12.2zm352.3-187.6c45 76.6 34.9 176.9-30.8 242.6-37.8 37.8-88 58.6-141.4 58.6-30.5 0-59.8-7-86.4-19.8-3.9 19.5-8 35-12.2 47.2 31.4 13.6 65 20.6 98.7 20.6 63.5 0 126.9-24.2 175.4-72.6 78.1-78.1 93.1-195.4 45.2-288.6-12.3 4-28.2 8.1-48.5 12zm-33.3-26.9c25.8-3.7 84-13.7 100.9-30.6 21.9-21.9 21.5-57.9-.9-80.3s-58.3-22.8-80.3-.9C397.7 33 387.7 91.2 384 117c-.8 6.4 4.6 11.8 10.9 10.9zm-187 108.3c-3-3-7.2-4.2-11.4-3.2L106 255.7c-5.7 1.4-9.5 6.7-9.1 12.6.5 5.8 5.1 10.5 10.9 11l52.3 4.8 4.8 52.3c.5 5.8 5.2 10.4 11 10.9h.9c5.5 0 10.3-3.7 11.7-9.1l22.6-90.5c1-4.2-.2-8.5-3.2-11.5zm39.7-25.1l90.5-22.6c5.7-1.4 9.5-6.7 9.1-12.6-.5-5.8-5.1-10.5-10.9-11l-52.3-4.8-4.8-52.3c-.5-5.8-5.2-10.4-11-10.9-5.6-.1-11.2 3.4-12.6 9.1L233 196.5c-1 4.1.2 8.4 3.2 11.4 5 5 11.3 3.2 11.4 3.2zm52 88.5c-29.1 29.1-59.7 52.9-83.9 65.4-9.2 4.8-10 17.5-1.7 23.4 38.9 27.7 107 6.2 143.7-30.6S416 253 388.3 214.1c-5.8-8.2-18.5-7.6-23.4 1.7-12.3 24.2-36.2 54.7-65.3 83.8z"></path></svg>
+<svg width="13%" aria-hidden="true" focusable="false" data-prefix="far" data-icon="grin-tears" class="svg-inline--fa fa-grin-tears fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M117.1 256.1c-25.8 3.7-84 13.7-100.9 30.6-21.9 21.9-21.5 57.9.9 80.3s58.3 22.8 80.3.9C114.3 351 124.3 292.8 128 267c.8-6.4-4.6-11.8-10.9-10.9zm506.7 30.6c-16.9-16.9-75.1-26.9-100.9-30.6-6.3-.9-11.7 4.5-10.8 10.8 3.7 25.8 13.7 84 30.6 100.9 21.9 21.9 57.9 21.5 80.3-.9 22.3-22.3 22.7-58.3.8-80.2zm-126.6 61.7C463.8 412.3 396.9 456 320 456c-76.9 0-143.8-43.7-177.2-107.6-12.5 37.4-25.2 43.9-28.3 46.5C159.1 460.7 234.5 504 320 504s160.9-43.3 205.5-109.1c-3.2-2.7-15.9-9.2-28.3-46.5zM122.7 224.5C137.9 129.2 220.5 56 320 56c99.5 0 182.1 73.2 197.3 168.5 2.1-.2 5.2-2.4 49.5 7C554.4 106 448.7 8 320 8S85.6 106 73.2 231.4c44.5-9.4 47.1-7.2 49.5-6.9zM320 400c51.9 0 115.3-32.9 123.3-80 1.7-9.9-7.7-18.5-17.7-15.3-25.9 8.3-64.4 13.1-105.6 13.1s-79.6-4.8-105.6-13.1c-9.8-3.1-19.4 5.3-17.7 15.3 8 47.1 71.4 80 123.3 80zm130.3-168.3c3.6-1.1 6-4.5 5.7-8.3-3.3-42.1-32.2-71.4-56-71.4s-52.7 29.3-56 71.4c-.3 3.7 2.1 7.2 5.7 8.3 3.5 1.1 7.4-.5 9.3-3.7l9.5-17c7.7-13.7 19.2-21.6 31.5-21.6s23.8 7.9 31.5 21.6l9.5 17c2.1 3.6 6.2 4.6 9.3 3.7zM240 189.4c12.3 0 23.8 7.9 31.5 21.6l9.5 17c2.1 3.7 6.2 4.7 9.3 3.7 3.6-1.1 6-4.5 5.7-8.3-3.3-42.1-32.2-71.4-56-71.4s-52.7 29.3-56 71.4c-.3 3.7 2.1 7.2 5.7 8.3 3.5 1.1 7.4-.5 9.3-3.7l9.5-17c7.7-13.8 19.2-21.6 31.5-21.6z"></path></svg>
+<svg width="10%" aria-hidden="true" focusable="false" data-prefix="far" data-icon="grin-wink" class="svg-inline--fa fa-grin-wink fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M328 180c-25.69 0-55.88 16.92-59.86 42.12-1.75 11.22 11.5 18.24 19.83 10.84l9.55-8.48c14.81-13.19 46.16-13.19 60.97 0l9.55 8.48c8.48 7.43 21.56.25 19.83-10.84C383.88 196.92 353.69 180 328 180zm-160 60c17.67 0 32-14.33 32-32s-14.33-32-32-32-32 14.33-32 32 14.33 32 32 32zm185.55 64.64c-25.93 8.3-64.4 13.06-105.55 13.06s-79.62-4.75-105.55-13.06c-9.94-3.13-19.4 5.37-17.71 15.34C132.67 367.13 196.06 400 248 400s115.33-32.87 123.26-80.02c1.68-9.89-7.67-18.48-17.71-15.34zM248 8C111.03 8 0 119.03 0 256s111.03 248 248 248 248-111.03 248-248S384.97 8 248 8zm0 448c-110.28 0-200-89.72-200-200S137.72 56 248 56s200 89.72 200 200-89.72 200-200 200z"></path></svg>
+<svg width="10%" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg>
+<svg width="8%" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker" class="svg-inline--fa fa-map-marker fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0z"></path></svg>
+<svg width="10%" aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"></path></svg>
+
+
+#### 此为在[Font Awesome](https://fontawesome.com/)上找到的一些svg图片，利用markdown与svg内联进行排序
+```markdown
+<svg width="10%" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="flushed" class="svg-inline--fa fa-flushed fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M344 200c-13.3 0-24 10.7-24 24s10.7 24 24 24 24-10.7 24-24-10.7-24-24-24zm-192 0c-13.3 0-24 10.7-24 24s10.7 24 24 24 24-10.7 24-24-10.7-24-24-24zM248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zM80 224c0-39.8 32.2-72 72-72s72 32.2 72 72-32.2 72-72 72-72-32.2-72-72zm232 176H184c-21.2 0-21.2-32 0-32h128c21.2 0 21.2 32 0 32zm32-104c-39.8 0-72-32.2-72-72s32.2-72 72-72 72 32.2 72 72-32.2 72-72 72z"></path>
+</svg>
+<svg width="10%"aria-hidden="true" focusable="false" data-prefix="fas" data-icon="grin-alt" class="svg-inline--fa fa-grin-alt fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm63.7 128.7c7.6-11.4 24.7-11.7 32.7 0 12.4 18.4 15.1 36.9 15.7 55.3-.5 18.4-3.3 36.9-15.7 55.3-7.6 11.4-24.7 11.7-32.7 0-12.4-18.4-15.1-36.9-15.7-55.3.5-18.4 3.3-36.9 15.7-55.3zm-160 0c7.6-11.4 24.7-11.7 32.7 0 12.4 18.4 15.1 36.9 15.7 55.3-.5 18.4-3.3 36.9-15.7 55.3-7.6 11.4-24.7 11.7-32.7 0-12.4-18.4-15.1-36.9-15.7-55.3.5-18.4 3.3-36.9 15.7-55.3zM248 432c-60.6 0-134.5-38.3-143.8-93.3-2-11.8 9.3-21.6 20.7-17.9C155.1 330.5 200 336 248 336s92.9-5.5 123.1-15.2c11.4-3.7 22.6 6.1 20.7 17.9-9.3 55-83.2 93.3-143.8 93.3z"></path>
+</svg>
+```
+
+## 再制作属于自己的SVG动图：（微波炉烤甜甜圈）
+***
+<section>
 <style>
-
-
-.cloud-one {
-  width:100px;
-  height:5px;
-  background:white;
-  background: linear-gradient(white, #eeeeee);
-  border-radius:25px;
-  position:absolute;
-  bottom:225px;
-  opacity:0.6;
-  
-  -webkit-animation: cloud-mover 45s linear infinite;
-  -moz-animation: cloud-mover 45s linear infinite;
-  -o-animation: cloud-mover 45s linear infinite;
-  animation: cloud-mover 45s linear infinite;
-}
-
-.cloud-two {
-  width:60px;
-  height:5px;
-  background:white;
-  background: linear-gradient(white, #eeeeee);
-  border-radius:25px;
-  position:absolute;
-  bottom:210px;
-  opacity:0.6;
-  
-  -webkit-animation: cloud-mover 55s linear infinite;
-  -moz-animation: cloud-mover 55s linear infinite;
-  -o-animation: cloud-mover 55s linear infinite;
-  animation: cloud-mover 55s linear infinite;
-}
-
-.cloud-three {
-  width:100px;
-  height:5px;
-  background:white;
-  background: linear-gradient(white, #eeeeee);
-  border-radius:25px;
-  position:absolute;
-  bottom:235px;
-  opacity:0.6;
-  
-  -webkit-animation: cloud-mover 65s linear infinite;
-  -moz-animation: cloud-mover 65s linear infinite;
-  -o-animation: cloud-mover 65s linear infinite;
-  animation: cloud-mover 65s linear infinite;
-}
-
-.cloud-four {
-  width:100px;
-  height:5px;
-  background:white;
-  background: linear-gradient(white, #eeeeee);
-  border-radius:25px;
-  position:absolute;
-  bottom:276px;
-  opacity:0.6;
-  
-  -webkit-animation: cloud-mover 75s linear infinite;
-  -moz-animation: cloud-mover 75s linear infinite;
-  -o-animation: cloud-mover 75s linear infinite;
-  animation: cloud-mover 75s linear infinite;
-}
-
-.cloud-five {
-  width:120px;
-  height:5px;
-  background:white;
-  background: linear-gradient(white, #eeeeee);
-  border-radius:25px;
-  position:absolute;
-  bottom:260px;
-  opacity:0.6;
-  
-  -webkit-animation: cloud-mover 85s linear infinite;
-  -moz-animation: cloud-mover 85s linear infinite;
-  -o-animation: cloud-mover 85s linear infinite;
-  animation: cloud-mover 85s linear infinite;
-}
-
-.cloud-six {
-  width:45px;
-  height:5px;
-  background:white;
-  background: linear-gradient(white, #eeeeee);
-  border-radius:25px;
-  position:absolute;
-  bottom:250px;
-  opacity:0.6;
-  
-  -webkit-animation: cloud-mover 95s linear infinite;
-  -moz-animation: cloud-mover 95s linear infinite;
-  -o-animation: cloud-mover 95s linear infinite;
-  animation: cloud-mover 95s linear infinite;
-}
-
-.cloud-seven {
-  width:65px;
-  height:5px;
-  background:white;
-  background: linear-gradient(white, #eeeeee);
-  border-radius:25px;
-  position:absolute;
-  bottom:285px;
-  opacity:0.6;
-  
-  -webkit-animation: cloud-mover 70s linear infinite;
-  -moz-animation: cloud-mover 70s linear infinite;
-  -o-animation: cloud-mover 70s linear infinite;
-  animation: cloud-mover 70s linear infinite;
-}
-
-.cloud-eight {
-  width:105px;
-  height:5px;
-  background:white;
-  background: linear-gradient(white, #eeeeee);
-  border-radius:25px;
-  position:absolute;
-  bottom:313px;
-  opacity:0.6;
-  
-  -webkit-animation: cloud-mover 50s linear infinite;
-  -moz-animation: cloud-mover 50s linear infinite;
-  -o-animation: cloud-mover 50s linear infinite;
-  animation: cloud-mover 50s linear infinite;
-}
-
-.cloud-nine {
-  width:85px;
-  height:5px;
-  background:white;
-  background: linear-gradient(white, #eeeeee);
-  border-radius:25px;
-  position:absolute;
-  bottom:305px;
-  opacity:0.6;
-  
-  -webkit-animation: cloud-mover 125s linear infinite;
-  -moz-animation: cloud-mover 125s linear infinite;
-  -o-animation: cloud-mover 125s linear infinite;
-  animation: cloud-mover 125s linear infinite;
-}
-
-.car {
-  -webkit-animation: carride 15s infinite linear;
-  -moz-animation: carride 15s linear infinite;
-  -o-animation: carride 15s linear infinite;
-  animation: carride 15s linear infinite;
-  z-index:999;
-  position:absolute;
-  bottom:0;
-}
-
-.car-base {
-  position:absolute;
-  bottom:10px;
-  right:45px;
-  width:80px;
-  height:15px;
-  background:#D35400;
-  background: linear-gradient(#D35400, #c14e03);
-  z-index:1;
-  -webkit-transform: perspective(100px) rotateX(-25deg);
-  -webkit-transform-origin: left center;
-  -moz-transform: perspective(100px) rotateX(-25deg);
-  -moz-transform-origin: left center;
-}
-
-.car-wheel-one {
-  width:10px;
-  height:10px;
-  border-radius:50px;
-  border-left:2px solid white;
-  border-right:2px solid #D35400;
-  border-top:2px solid white;
-  border-bottom:2px solid #D35400;
-  background-color:black;
-  position:absolute;
-  bottom:4px;
-  right:57px;
-  z-index:12;
-  -webkit-animation: wheel-spin 1.1s infinite linear;
-} 
-
-.car-wheel-two {
-   width:10px;
-  height:10px;
-  border-radius:50px;
-  border-left:2px solid white;
-  border-right:2px solid #D35400;
-  border-top:2px solid white;
-  border-bottom:2px solid #D35400;
-  
-  background-color:black;
-  position:absolute;
-  bottom:4px;
-  right:95px;
-  z-index:2;
-  -webkit-animation: wheel-spin 1.1s infinite linear;
-}
-
-.car-roof {
-  
-  width:50px;
-  height:25px;
-  background:#D35400;
-  position:absolute;
-  bottom:24px;
-  right:55px;
-  z-index:3;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-  
-  .car-roof-inner {
-    background:#F2F1EF;
-    background: linear-gradient(#F2F1EF, #dad9d8);
-    width:30px;
-    height:20px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    margin-left:10px;
-    margin-top:5px;
-    
-    .car-roof-seperator {
-      width:2px;
-      height:100%;
-      background-color:#D35400;
-      margin-left:18px;
-    } 
-  } 
-}
-
-.car-light {
-  width: 0;
-	height: 0;
-  border-top: 25px solid transparent;
-	border-bottom: 10px solid transparent;
-	border-left: 55px solid #fdf0d2;
-  position:absolute;
-  bottom:6px;
-  right:125px;
-  z-index:9;
-  opacity:0.3;
-}
-
-.moon {
-  width:100px;
-  height:100px;
-  border-radius:50%;
-  background:#e5e5e5;
-  background: linear-gradient(#e5e5e5, #c4c3c3);
-  position:absolute;
-  bottom:250px;
-  right:250px;
-  box-shadow:0 0 15px #7a7a7a, 0 0 150px #7a7a7a;
-}
-
-.long-shadow {  
-  width: 0; 
-  height: 0; 
-  border-left: 50px solid transparent;
-  border-right: 150px solid transparent;
-  border-bottom: 200px solid black;
-  position:absolute;
-  bottom:0;
-  right:0px;
-  z-index:1;
-  opacity:0.2;
-}
-
-.mountain {
-  width: 0;
-	height: 0;
-	border-left: 150px solid transparent;
-	border-right: 150px solid transparent;
-	border-bottom: 200px solid #2c3e51;
-  position:absolute;
-  bottom:0;
-  right:0;
-  z-index:1;
-}
-
-.overlay-shadow {
-  background-color:black;
-  width:93px;
-  height:25px;
-  position:absolute;
-  bottom:150px;
-  left:50px;
-  z-index:10;
-  opacity:0.1;
-}
-
-.overlay-shadow-two {
-  background-color:black;
-  width:170px;
-  height:7px;
-  position:absolute;
-  top:0px;
-  left:0px;
-  z-index:10;
-  opacity:0.1;
-}
-
-.house-container {
-  width:550px;
-  height:400px;
-  background-color:#34495e;
-  .title {
-    display:block;
-    text-align:center;
-    color:white;
-    font-size:36px;
-    text-transform:uppercase;
-  }
-}
-
-.house-roof {
-  width: 0; 
-	height: 0; 
-	border-left: 65px solid transparent;
-	border-right: 65px solid transparent;
-	border-bottom: 65px solid #22313F;
-  position:absolute;
-  top:-62px;
-  left:-24px;
-  z-index:1;
-}
-
-.house-inner-container {
-  position:relative;
-
-  height:100%;
-
-}
-
-.house-development-platform {
-  background-color:white;
-  height:2px;
-  width:100%;
-  border-top:#22313F 1px solid;
-  border-bottom:#22313F 1px solid;
-  position:absolute;
-  bottom:0;
-  left:0;
-  z-index:30;
-}
-
-.tree {
-  background-color:#86421c;
-  width:15px;
-  height:65px;
-  position:absolute;
-  bottom:0;
-  left:25px;
-  
-  .tree-top {
-    width: 0; 
-	  height: 0; 
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-    border-bottom: 100px solid #049372;
-    position:absolute;
-    bottom:25px;
-    left:-22px;
-  }
-  
-  .tree-shadow {
-      background-color:black;
-      width:15px;
-      height:10px;
-      position:absolute;
-      bottom:15px;
-      z-index:10;
-      opacity:0.1;
+.box {
+        height: 300px;
+		width: 300px;
     }
-}
 
-.store-one {
-  width:170px;
-  height:95px;
-  background: #C0392B;
-  background: linear-gradient(#ca3e30, #C0392B);
-  position:absolute;
-  z-index:2;
-  bottom:3px;
-  left:110px;
-  border-left:3px solid #932b20;
-  border-right:3px solid #932b20;
-  text-align:center;
-  
-  .school-flag-post {
-    background-color:#932b20;
-    height:25px;
-    width:5px;
-    position:absolute;
-    top:-35px;
-    right:30px;
-  }
-  
-  .school-flag {
-    width: 0; 
-	  height: 0; 
-    border-top: 10px solid transparent;
-    border-left: 25px solid #bc3b2d;
-    border-bottom: 10px solid transparent;
-    position:absolute;
-    top:-50px;
-    right:10px;
-    z-index:200;
-  }
-  
-  .roof {
-    width:190px;
-    height:10px;
-    background-color:#932b20;
-    position:absolute;
-    top:-10px;
-    left:-10px;
-  }
-  
-  .door {
-    width:30px;
-    height:40px;
-    background-color:#e3fafd;
-    position:absolute;
-    bottom:0;
-    right:25px;
-    border-top:3px solid #932b20;
-    border-right:3px solid #932b20;
-    border-left:3px solid #932b20;
-    
-    .door-shadow {
-        width: 0; 
-        height: 0; 
-        border-left: 30px solid transparent;
-        border-right: 0px solid transparent;
-        border-bottom: 40px solid #cdf7fc;
-        position:absolute;
-        top:0;
-        right:0px;
-        z-index:1;
+.css {
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    
-    .door-sign {
-      background-color:#932b20;
-      margin-top:15px;
-      height:10px;
-      position:relative;
-      z-index:2;
-      
-      span {
-        font-family: $primary-font;
-        font-size:7px;
-        font-weight:bold;
-        position:relative;
-        top:-5px;
-        color:white;
-      }
-    }
-    
-  }
-  
-  .store-window-left {
-    height:50px;
-    width:75px;
-    background-color:#e3fafd;
-    position:absolute;
-    top:20px;
-    left:10px;
-    border:3px solid #932b20;
-    -moz-box-shadow: inset 0 0 8px rgba(0,0,0, 0.25);
-    -webkit-box-shadow: inset 0 0 8px rgba(0,0,0, 0.25);
-    box-shadow: inset 0 0 8px rgba(0,0,0, 0.25);
-    
-    .window-divider {
-      width:2px;
-      height:50px;
-      background-color:#932b20;
-      position:absolute;
-      left:37px;
-      z-index:10;
-    }
-    
-    .store-window-shadow {
-        width: 0; 
-        height: 0; 
-        border-left: 75px solid transparent;
-        border-right: 0px solid transparent;
-        border-bottom: 50px solid #cdf7fc;
-        position:absolute;
-        top:0;
-        right:0px;
-    }
-    
-   }  
-}
 
-.house-one {
-  width:85px;
-  height:175px;
-  background: #EB9532;
-  background: linear-gradient(#EB9532, #c27b28);
-  position:absolute;
-  bottom:0;
-  left:50px;
-  border-top:solid 3px #E87E04;
-  border-left:solid 3px #E87E04;
-  border-right:solid 3px #E87E04;
-  
-  .door {
-    height:50px;
-    width:30px;
-    border:4px solid #22313F;
-    position:absolute;
-    bottom:0px;
-    left:7px;
-      
-    .door-inner {
-      background-color:white;
-      width:24px;
-      height:44px;
-      border:3px solid #E87E04;
+    .box svg {
+        animation: rotate1 4s infinite;
+        transform: rotate(22.5deg);
     }
-    
-    .door-inner-2x {
-      background-color:white;
-      width:18px;
-      height:38px;
-      border:3px solid;
-    }
-  }
-  
-  .first-level-window-left {
-    width:20px;
-    height:40px;
-    background-color:white;
-    position:absolute;
-    left:10px;
-    top:20px;
-    border-top:2px solid #22313F;
-    border-left:2px solid #22313F;
-    border-right:2px solid #22313F;
-    
-    .windowsill {
-      height:2px;
-      width:30px;
-      background-color:#22313F;
-      position:absolute;
-      bottom:-2px;
-      left:-5px;
-    }
- }
-  
-  .first-level-window-right {
-    width:20px;
-    height:40px;
-    background-color:white;
-    position:absolute;
-    left:50px;
-    top:20px;
-    border-top:2px solid #22313F;
-    border-left:2px solid #22313F;
-    border-right:2px solid #22313F;
-    
-    .window-half-closed {
-      width:20px;
-      height:20px;
-      background-color:#22313F;
-      position:absolute;
-      bottom:0;
-    }
-    
-    .windowsill {
-      height:2px;
-      width:30px;
-      background-color:#22313F;
-      position:absolute;
-      bottom:-2px;
-      left:-5px;
-    }
-  }
-}
 
-/*CSS Animations */
+    @keyframes rotate1 {
+        0% {
+            transform: rotate(455deg);
+        }
 
-@-webkit-keyframes carride {
-    from {-webkit-transform: translateX(650px);}
-    to {-webkit-transform: translateX(-100px);}
-}
+        5% {
+            transform: rotate(67.5deg);
+        }
 
-@-webkit-keyframes cloud-mover {
-  from {-webkit-transform: translateX(-100px);}
-  to {-webkit-transform: translateX(550px);}
-}
+        12.5% {
+            transform: rotate(67.5deg);
+        }
 
-@-webkit-keyframes wheel-spin {
-    from {-webkit-transform: rotate(359deg);}
-    to   {-webkit-transform: rotate(0deg);}
-}
+        17.5% {
+            transform: rotate(90deg);
+        }
+
+        25% {
+            transform: rotate(90deg);
+        }
+
+        30% {
+            transform: rotate(112.5deg);
+        }
+
+        37.5% {
+            transform: rotate(112.5deg);
+        }
+
+        42.5% {
+            transform: rotate(135deg);
+        }
+
+        50% {
+            transform: rotate(135deg);
+        }
+
+        55% {
+            transform: rotate(157.5deg);
+        }
+
+        62.5% {
+            transform: rotate(157.5deg);
+        }
+
+        67.5% {
+            transform: rotate(180deg);
+        }
+
+        75% {
+            transform: rotate(180deg);
+        }
+
+        80% {
+            transform: rotate(202.5deg);
+        }
+
+        87.5% {
+            transform: rotate(202.5deg);
+        }
+
+        92.5% {
+            transform: rotate(225deg);
+        }
+
+        100% {
+            transform: rotate(225deg);
+        }
+    }
 </style>
+<div class="box css">
+ <svg id="donut_svg" x="0px" y="0px" width="500px" height="500px" viewBox="0 0 500 500">
 
-    <div class="house-container">
-    <div class="house-inner-container">
-      <div class="overlay-shadow"></div>
-      <div class="tree">
-        <div class="tree-top">
-        </div>
-        <div class="tree-shadow">
-         </div>
-      </div>
-      <div class="house-one">
-        <div class="house-roof">
-        </div>
-        <div class="first-level-window-left">
-          <div class="windowsill">
-          </div>
-        </div>
-        <div class="first-level-window-right">
-          <div class="window-half-closed">
-          </div>
-          <div class="windowsill">
-          </div>
-        </div>
-        <div class="door">
-          <div class="door-inner">
-            <div class="door-inner-2x">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="store-one">
-        <div class="overlay-shadow-two"></div>
-        <div class="school-flag-post"></div>
-        <div class="school-flag"></div>
-        <div class="roof"></div>
-        <div class="door">
-          <div class="door-shadow"></div>
-          <div class="sign-holder"></div>
-          <div class="door-sign">
-            <span>房子</span>
-          </div>
-        </div>
-        <div class="store-window-left">
-          <div class="window-divider"></div>
-          <div class="store-window-shadow"></div>
-        </div>
-      </div>
-      <div class="moon"></div>
-      <div class="mountain"></div>
-      <div class="long-shadow"></div>
-      <div class="cloud-container">
-      <div class="cloud-one"></div>
-      <div class="cloud-two"></div>
-      <div class="cloud-three"></div>
-      <div class="cloud-four"></div>
-      <div class="cloud-five"></div>
-      <div class="cloud-six"></div>
-      <div class="cloud-seven"></div>
-      <div class="cloud-eight"></div>
-      <div class="cloud-nine"></div>
-      </div>
-      <div class="car">
-        <div class="car-base"></div>
-        <div class="car-wheel-one"></div>
-        <div class="car-wheel-two"></div>
-        <div class="car-roof">
-          <div class="car-roof-inner">
-            <div class="car-roof-seperator"></div>
-          </div>
-        </div>
-        <div class="car-light"></div>
-      </div>
-      <div class="house-development-platform">
-      </div>
-    </div>
-  </div>
+	<!-- donut base -->
+	<g id="donut">
+		<path fill="#FFEBBF" d="M250,12.5C118.834,12.5,12.5,118.831,12.5,250S118.834,487.5,250,487.5
+			c131.169,0,237.5-106.331,237.5-237.5S381.169,12.5,250,12.5z M250,299.915c-27.57,0-49.921-22.347-49.921-49.915
+			c0-27.572,22.351-49.923,49.921-49.923c27.572,0,49.918,22.352,49.918,49.923C299.918,277.568,277.572,299.915,250,299.915z"/>
+	</g>
 
-      </section>
+	<!-- donut frosting -->
+	<g id="frosting">
+		<path fill="#F39CC2" d="M433.204,177.319c-19.424-20.103-28.582-46.769-43.438-69.919c-16.524-25.75-65.617-16.817-90.439-29.809
+			c-26.26-13.75-42.691-42.205-76.386-36.803c-36.091,5.783-58.862,38.943-88.884,56.501c-14.42,8.436-30.122,14.551-42.892,25.639
+			c-27.3,23.697-45.463,62.62-43.125,102.451c1.674,28.485,10.698,55.698,16.106,83.544c4.386,22.579,1.773,51.871,19.612,69.175
+			c17.313,16.791,46.608,15.063,67.878,23.035c35.171,13.185,57.312,53.838,94.554,60.485c37.938,6.771,66.279-26.021,98.483-39.527
+			c34.238-14.366,68.241-23.183,80.809-60.149c10.246-30.142,2.546-66.34,12.836-96.564
+			C448.676,234.937,458.51,203.493,433.204,177.319z M250,299.915c-27.57,0-49.921-22.347-49.921-49.915
+			c0-27.572,22.351-49.923,49.921-49.923c27.572,0,49.918,22.352,49.918,49.923C299.918,277.568,277.572,299.915,250,299.915z"/>
+	</g>
+
+	<!-- donut sprinkles -->
+	<g id="sprinkles">
+		<path fill="#FF0033" d="M96.479,214.809c0,3.881-2.823,7.031-6.305,7.031l0,0c-3.48,0-6.304-3.15-6.304-7.031v-21.083
+			c0-3.88,2.823-7.03,6.304-7.03l0,0c3.482,0,6.305,3.15,6.305,7.03V214.809z"/>
+		<path fill="#3333FF" d="M114.17,148.532c-3.865-0.337-6.755-3.423-6.449-6.89l0,0c0.306-3.472,3.687-6.003,7.552-5.664
+			l21.004,1.841c3.865,0.34,6.753,3.426,6.448,6.895l0,0c-0.307,3.463-3.684,6.002-7.553,5.667L114.17,148.532z"/>
+		<path fill="#FFFFFF" d="M96.645,291.701c-3.865-0.34-6.753-3.424-6.448-6.891l0,0c0.302-3.475,3.685-6.002,7.552-5.668
+			l21.003,1.849c3.868,0.341,6.756,3.428,6.449,6.895l0,0c-0.305,3.464-3.686,5.999-7.552,5.664L96.645,291.701z"/>
+		<path fill="#FFFFFF" d="M387.535,343.998c0,3.883-2.819,7.029-6.3,7.029l0,0c-3.481,0-6.304-3.146-6.304-7.029v-21.083
+			c0-3.886,2.82-7.028,6.304-7.028l0,0c3.479,0,6.3,3.143,6.3,7.028V343.998z"/>
+		<path fill="#FFFF00" d="M342.932,314.854c3.494,1.707,5.08,5.621,3.547,8.75l0,0c-1.523,3.131-5.598,4.283-9.081,2.574
+			l-18.938-9.263c-3.486-1.709-5.071-5.626-3.542-8.753l0,0c1.525-3.123,5.595-4.271,9.082-2.57L342.932,314.854z"/>
+		<path fill="#3333FF" d="M337,221.975c0,3.883-2.82,7.029-6.304,7.029l0,0c-3.481,0-6.306-3.146-6.306-7.029V200.89
+			c0-3.88,2.822-7.025,6.306-7.025l0,0c3.481,0,6.304,3.145,6.304,7.025V221.975z"/>
+		<path fill="#FFFFFF" d="M341.406,156.772c-3.865-0.337-6.752-3.422-6.449-6.895l0,0c0.308-3.467,3.688-6.003,7.558-5.659
+			l20.998,1.845c3.868,0.339,6.757,3.425,6.448,6.894l0,0c-0.303,3.463-3.684,6.003-7.552,5.662L341.406,156.772z"/>
+		<path fill="#FFFF00" d="M404.844,192.854c3.087-2.352,7.297-2.022,9.41,0.742l0,0c2.114,2.76,1.329,6.917-1.753,9.275
+			l-16.744,12.805c-3.085,2.361-7.294,2.031-9.411-0.733l0,0c-2.114-2.765-1.332-6.913,1.751-9.277L404.844,192.854z"/>
+		<path fill="#FF0033" d="M276.188,328.206c3.316-2.013,7.477-1.229,9.281,1.745l0,0c1.801,2.979,0.575,7.02-2.746,9.029
+			l-18.029,10.938c-3.313,2.011-7.471,1.229-9.275-1.743l0,0c-1.805-2.979-0.575-7.019,2.745-9.032L276.188,328.206z"/>
+		<path fill="#3333FF" d="M319.045,372.999c2.292-3.13,6.426-4.003,9.239-1.949l0,0c2.806,2.054,3.227,6.263,0.936,9.394
+			l-12.447,17.02c-2.299,3.134-6.432,4.008-9.239,1.947l0,0c-2.811-2.054-3.229-6.26-0.938-9.391L319.045,372.999z"/>
+		<path fill="#FFFFFF" d="M260.777,414.779c0.423,3.856-2.039,7.289-5.504,7.675l0,0c-3.465,0.378-6.605-2.438-7.026-6.3
+			l-2.295-20.963c-0.421-3.858,2.04-7.297,5.5-7.67l0,0c3.463-0.379,6.606,2.438,7.03,6.297L260.777,414.779z"/>
+		<path fill="#FF0033" d="M380.892,258.499c3.875,0.217,6.861,3.212,6.662,6.687l0,0c-0.197,3.474-3.496,6.116-7.373,5.897
+			l-21.047-1.188c-3.88-0.219-6.856-3.207-6.663-6.688l0,0c0.193-3.475,3.494-6.111,7.368-5.896L380.892,258.499z"/>
+		<path fill="#FFFFFF" d="M155.469,192.854c3.081-2.352,7.296-2.022,9.411,0.742l0,0c2.115,2.76,1.332,6.917-1.75,9.275
+			l-16.747,12.805c-3.083,2.361-7.296,2.031-9.412-0.733l0,0c-2.115-2.765-1.331-6.913,1.751-9.277L155.469,192.854z"/>
+		<path fill="#FFFFFF" d="M238.92,142.483c3.242,2.136,4.312,6.229,2.394,9.127l0,0c-1.919,2.906-6.098,3.528-9.336,1.392
+			l-17.597-11.616c-3.239-2.139-4.309-6.228-2.392-9.137l0,0c1.917-2.899,6.097-3.525,9.335-1.38L238.92,142.483z"/>
+		<path fill="#FFFF00" d="M185.822,111.912c-2.415,3.04-6.581,3.748-9.309,1.585l0,0c-2.723-2.162-2.978-6.381-0.565-9.422
+			l13.113-16.515c2.415-3.042,6.58-3.748,9.307-1.582l0,0c2.725,2.165,2.977,6.377,0.562,9.422L185.822,111.912z"/>
+		<path fill="#3333FF" d="M245.836,74.647c-0.269-3.876,2.327-7.212,5.798-7.451l0,0c3.478-0.244,6.509,2.701,6.773,6.572
+			l1.467,21.034c0.271,3.868-2.326,7.212-5.798,7.447l0,0c-3.469,0.244-6.504-2.696-6.776-6.568L245.836,74.647z"/>
+		<path fill="#FF0033" d="M304.464,132.775c3.082-2.356,7.298-2.031,9.413,0.738l0,0c2.116,2.767,1.33,6.916-1.754,9.272
+			l-16.741,12.812c-3.092,2.361-7.303,2.032-9.417-0.733l0,0c-2.113-2.764-1.33-6.917,1.756-9.275L304.464,132.775z"/>
+		<path fill="#FFFF00" d="M128.665,352.584c-2.996,2.473-7.218,2.299-9.43-0.387l0,0c-2.214-2.686-1.582-6.866,1.414-9.336
+			l16.266-13.414c2.996-2.467,7.219-2.29,9.436,0.396l0,0c2.213,2.688,1.579,6.865-1.416,9.333L128.665,352.584z"/>
+		<path fill="#3333FF" d="M148.522,272.611c-1.771-3.451-0.697-7.545,2.399-9.125l0,0c3.101-1.592,7.047-0.084,8.815,3.371
+			l9.625,18.764c1.771,3.453,0.696,7.542-2.4,9.129l0,0c-3.101,1.586-7.045,0.077-8.816-3.376L148.522,272.611z"/>
+		<path fill="#FFFFFF" d="M214.045,345.992c3.78,0.886,6.207,4.347,5.418,7.729l0,0c-0.789,3.396-4.491,5.43-8.272,4.553
+			l-20.536-4.771c-3.782-0.88-6.208-4.335-5.42-7.729l0,0c0.787-3.394,4.493-5.43,8.272-4.549L214.045,345.992z"/>
+	</g>
+</svg>
+</div>
+</section>
+
+***
+### 总结
+- 在jekyll上进行动画演示时可以直接在markdown上使用style样式表直接进行链接。
