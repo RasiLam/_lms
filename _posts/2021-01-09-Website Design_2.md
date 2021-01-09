@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 404报错？如何避免错误进行jekyll导航栏的设置
-excerpt_separator: "<!--more-->"
+excerpt_separator: <!--more-->
 categories:
      - 网站设计
 ---
