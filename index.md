@@ -1,4 +1,4 @@
 ---
 layout: home
-image: assets/banner.jpg
+image: assets/首页banner.jpg
 ---
