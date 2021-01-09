@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 页面设计之灰阶打印，假如回到70年代，网页是怎样的？
-excerpt_separator: "<!--more-->"
+excerpt_separator: <!--more-->
 categories:
      - 平面设计
 ---
