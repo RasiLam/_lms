@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 你的网页字体安全吗？什么是衬线字体与非衬线字体？
-excerpt_separator: "<!--more-->"
+excerpt_separator: <!--more-->
 categories:
      - 平面设计
 ---
