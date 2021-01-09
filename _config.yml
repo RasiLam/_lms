@@ -17,7 +17,7 @@ lang: zh-CN
 title: RasiLam's Personal Website
 email: "1209307789@qq.com"
 description: "RasiLam's Personal Website"
-baseurl: "jekyll-theme-basically-basic" # the optional subpath of your site, e.g. "/blog"
+baseurl: "/_lms" # the optional subpath of your site, e.g. "/blog"
 url: "https://linmengshi.gitee.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 author:
   name: "Lin Mengshi"
