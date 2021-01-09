@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 保姆式svg制作教程，你想让你的图片动起来吗！！！
-excerpt_separator: "<!--more-->"
+excerpt_separator: <!--more-->
 categories:
      - 学习笔记
 ---
