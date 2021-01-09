@@ -3,7 +3,7 @@ layout: page
 title: 响应式网页设计
 excerpt_separator: <!--more-->
 categories:
-     - 网站设计
+     - 网页设计
 ---
 
 # 篇一
