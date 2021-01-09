@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 首页布局不好看？如何隐藏文章部分内容，显示摘要
-excerpt_separator: "<!--more-->"
+excerpt_separator: <!--more-->
 categories:
      - 网站设计
 ---
