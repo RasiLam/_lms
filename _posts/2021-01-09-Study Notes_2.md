@@ -1,7 +1,7 @@
 ---
 layout: page
 title: jekyll网站实现分页，多页面显示文章你学会了吗？
-excerpt_separator: "<!--more-->"
+excerpt_separator: <!--more-->
 categories:
      - 学习笔记
 ---
