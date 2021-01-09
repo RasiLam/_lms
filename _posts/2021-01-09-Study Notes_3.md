@@ -1,7 +1,7 @@
 ---
 layout: page
 title: dns域名解析，泛域名解析（成功案例）
-excerpt_separator: "<!--more-->"
+excerpt_separator: <!--more-->
 categories:
      - 学习笔记
 ---
