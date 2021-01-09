@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 响应式网页设计
-excerpt_separator: "<!--more-->"
+excerpt_separator: <!--more-->
 categories:
      - 网站设计
 ---
