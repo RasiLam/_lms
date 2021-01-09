@@ -1,7 +1,7 @@
 ---
 layout: page
 title: web隐藏术？你看到的可能只是网页的一部分
-excerpt_separator: "<!--more-->"
+excerpt_separator: <!--more-->
 categories:
      - 平面设计
 ---
