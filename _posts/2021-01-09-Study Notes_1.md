@@ -30,7 +30,6 @@ categories:
 
 （9）SVG文件是纯粹的XML。
 ### SVG代码
-
 * <svg>的width属性和height属性，指定了 SVG 图像在 HTML 元素中所占据的宽度和高度。除了相对单位%，也可以采用绝对单位（单位：像素）。
 
 ```
@@ -60,7 +59,9 @@ categories:
 以下是获取SVG图标链接：
 
 Font Awesome图库(http://www.fontawesome.com.cn/faicons/)
+
 codepen(https://codepen.io)
+
 Iconfont(https://www.iconfont.cn/)
 
 
