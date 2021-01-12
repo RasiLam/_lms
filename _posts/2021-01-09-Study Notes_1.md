@@ -38,7 +38,7 @@ categories:
 
 #### Viewbox 视区盒子
 * Viewbox就是截屏工具选中的那个框框，最终的呈现就是把框框中的截屏内容再次在显示器中全屏显示
-![](https://github.com/RasiLam/lms_web/blob/lms_/assets/SVG1.png?raw=true)
+![](lms_web/assets/SVG1.png)
 * 参数：viewBox="x, y, width, height" （x:左上角横坐标，y:左上角纵坐标）
  
 
@@ -51,11 +51,10 @@ categories:
 
 ### 内联SVG
 * 在 HTML5 中，能够将 SVG 元素直接嵌入 HTML 页面中
-![](https://github.com/RasiLam/lms_web/blob/lms_/assets/SVG2.png?raw=true)
+![](lms_web/assets/SVG2.png)
 
 ### SVG动画
-![](https://github.com/RasiLam/lms_web/blob/lms_/assets/SVG3.jpg?raw=true)
-
+![](lms_web/assets/SVG3.jpg)
 以下是获取SVG图标链接：
 
 Font Awesome图库 [http://www.fontawesome.com.cn/faicons/](http://www.fontawesome.com.cn/faicons/)
