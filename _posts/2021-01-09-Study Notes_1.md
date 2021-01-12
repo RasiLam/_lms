@@ -1,13 +1,13 @@
 ---
 layout: page
-title: 保姆式svg制作教程，你想让你的图片动起来吗！！！
+title: 保姆式svg制作教程:你想让你的图片动起来吗?!
 excerpt_separator: <!--more-->
 categories:
      - 学习笔记
 ---
 
 # 篇一
-## title: 保姆式svg制作教程，你想让你的图片动起来吗！！！
+## title: 保姆式svg制作教程:你想让你的图片动起来吗?!
 
 <!--more-->
 
@@ -53,9 +53,8 @@ categories:
 
 ![](https://upload-images.jianshu.io/upload_images/7563229-813d659f78be0b34.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-#### 有一些class的位置设定是不需要的，以实际情况修改，markdown采用的是流式布局所以可以不需要设定特定的位置属性。
 
 
 
-![生活不易，天使在哪里？](https://upload-images.jianshu.io/upload_images/7563229-7e1eceaae22f2e0f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 
