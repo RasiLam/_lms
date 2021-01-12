@@ -22,7 +22,9 @@ categories:
 > 网页的生效离不开HTML5这些常见标签，下面让我们来认识一下。
 ![](https://github.com/RasiLam/lms_web/blob/lms_/assets/HTML3.jpg?raw=true)
 
-更多详情可以去菜鸟教程（https://www.runoob.com/） W3school （http://www.w3s.com.cn/） MDN（https://developer.mozilla.org/zh-CN/） 等官网上进行查询。
+更多详情可以去菜鸟教程 [https://www.runoob.com/]（https://www.runoob.com/） 
+W3school [http://www.w3s.com.cn/] （http://www.w3s.com.cn/） 
+MDN [https://developer.mozilla.org/zh-CN/]（https://developer.mozilla.org/zh-CN/） 等官网上进行查询。
 
 ```
 书写HTML代码时有以下注意事项
