@@ -47,7 +47,7 @@ categories:
 
 2.使用object标签：可以使用object标签引入外部svg文件到当前页面。
 
-3.把SVG作为背景图像插入：SVG可以在CSS中用作一个背景图像，和其他图片格式(PNG、JPG、GIF)一样4
+3.把SVG作为背景图像插入：SVG可以在CSS中用作一个背景图像，和其他图片格式(PNG、JPG、GIF)一样。
 
 ### 内联SVG
 * 在 HTML5 中，能够将 SVG 元素直接嵌入 HTML 页面中
