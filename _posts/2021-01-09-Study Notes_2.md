@@ -14,13 +14,13 @@ categories:
 
 ### HTML5基础
 #### HTML5文档结构
-![](/assets/https://github.com/RasiLam/lms_web/blob/lms_/assets/HTML1.jpg?raw=true)
-![](/assets/https://github.com/RasiLam/lms_web/blob/lms_/assets/HTML2.jpg?raw=true)
+![](https://github.com/RasiLam/lms_web/blob/lms_/assets/HTML1.jpg?raw=true)
+![](https://github.com/RasiLam/lms_web/blob/lms_/assets/HTML2.jpg?raw=true)
 > 每个网页都会用到这些元素，没有这些代码，网页会出现问题，因此HTML5文档结构是务必烂熟于心的！
 
 #### HTML5常见标签
 > 网页的生效离不开HTML5这些常见标签，下面让我们来认识一下。
-![](/assets/https://github.com/RasiLam/lms_web/blob/lms_/assets/HTML3.jpg?raw=true)
+![](https://github.com/RasiLam/lms_web/blob/lms_/assets/HTML3.jpg?raw=true)
 
 更多详情可以去菜鸟教程（https://www.runoob.com/） W3school （http://www.w3s.com.cn/） MDN（https://developer.mozilla.org/zh-CN/） 等官网上进行查询。
 
@@ -34,10 +34,10 @@ categories:
 
 ### CSS基础
 #### CSS3重要模块
-![](assets/https://github.com/RasiLam/lms_web/blob/lms_/assets/CSS1.jpg?raw=true)
+![](https://github.com/RasiLam/lms_web/blob/lms_/assets/CSS1.jpg?raw=true)
 
 #### CSS写法
-![](assets/https://github.com/RasiLam/lms_web/blob/lms_/assets/CSS2.png?raw=true)
+![](https://github.com/RasiLam/lms_web/blob/lms_/assets/CSS2.png?raw=true)
 * 选择器（Selector）：HTML 元素的名称位于规则集开始。它选择了一个或多个需要添加样式的元素（在这个例子中就是 p 元素）。要给不同元素添加样式只需要更改选择器就行了。
 * 声明（Declaration）：一个单独的规则。如 color: red; 用来指定添加样式元素的属性。
 * 属性（Properties）：改变 HTML 元素样式的途径。
