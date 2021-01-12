@@ -14,7 +14,7 @@ categories:
 
 ### 什么是媒体查询？
 > 这是一条媒体查询的例子：http://www.infinistudio.cn/， 帮助你对媒体查询有一个初步的了解。
-![](https://github.com/RasiLam/lms_web/blob/lms_/assets/%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A21.jpg?raw=true)
+![](lms_web/assets/images/meitichaxun1.jpg)
 
 ---
 基本的条件逻辑：if/else语句
@@ -35,7 +35,7 @@ categories:
 ```
 
 ### 媒体查询的常用前缀
-![](https://github.com/RasiLam/lms_web/blob/lms_/assets/%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A22.jpg?raw=true)
+![](lms_web/assets/images/meitichaxun2.jpg)
 
 ### 媒体查询可以测试哪些特性
 ---
