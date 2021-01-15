@@ -8,6 +8,7 @@ categories:
 
 # 篇三
 ## title: 网页设计的“零售铺”
+<!--more-->
 ### HTTP协议
 - HTTP协议全称Hyper Text Transfer Protocol，翻译过来就是超文本传输协议，位于TCP/IP四层模型当中的应用层。
 
