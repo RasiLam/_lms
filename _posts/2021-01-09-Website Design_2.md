@@ -8,6 +8,7 @@ categories:
 
 # 篇二
 ## title: 网页设计那些小事儿
+<!--more-->
 ### CSS
 - 1.CSS的定义
 
