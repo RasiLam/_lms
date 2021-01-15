@@ -10,3 +10,16 @@ $background-color: #263849 !default;
 $code-background-color: #fff !default;
 $border-color: rgba($text-color, 0.5) !default;
 $overlay-color: #fff !default;
+
+$serif: 'Noto Serif CJK SC', 'Noto Serif CJK', 'Source Han Serif SC', 'Source Han Serif', source-han-serif-sc, serif !default;
+$sans-serif: 'Noto', 'Noto Sans CJK SC', 'Noto Sans CJK', 'Source Han Sans', source-han-sans-simplified-c, sans-serif !default;
+/* Syntax highlighting (base16) colors */
+$base00: #cc99ff !default;
+$base01: #ffcccc !default;
+$base02: #ccccff !default;
+$base03: #66ccff !default;
+$base04: #cc99ff !default;
+$base05: black !default;
+$base06: #e0e0e0 !default;
+$base07: #ffffff !default;
+$base08: #cc6666 !default;
